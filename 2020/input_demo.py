@@ -1,6 +1,9 @@
-input = []
-with open("input.txt", "r") as f:
+DEBUG = False
+file = "input.txt"
+if DEBUG:
+        file = "test_input.txt"
+
+with open(file, "r") as f:
     for line in f:
-        num = int(line.strip("\n"))
-        input.append(num)
+        line = line.strip("\n")
 
